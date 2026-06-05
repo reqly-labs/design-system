@@ -1,0 +1,75 @@
+{
+    "name": "@reqly/design-system",
+    "version": "0.1.0",
+    "description": "Design tokens, themes and brand assets for the Reqly ecosystem.",
+    "license": "MIT",
+    "author": "Reqly Labs",
+    "homepage": "https://github.com/reqly-labs/design-system#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/reqly-labs/design-system.git"
+    },
+    "bugs": {
+        "url": "https://github.com/reqly-labs/design-system/issues"
+    },
+    "keywords": [
+        "reqly",
+        "design-system",
+        "design-tokens",
+        "themes",
+        "tailwind",
+        "oklch"
+    ],
+    "type": "module",
+    "sideEffects": false,
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        },
+        "./tokens": {
+            "types": "./dist/tokens.d.ts",
+            "import": "./dist/tokens.js",
+            "require": "./dist/tokens.cjs"
+        },
+        "./themes": {
+            "types": "./dist/themes.d.ts",
+            "import": "./dist/themes.js",
+            "require": "./dist/themes.cjs"
+        },
+        "./assets": {
+            "types": "./dist/assets.d.ts",
+            "import": "./dist/assets.js",
+            "require": "./dist/assets.cjs"
+        },
+        "./css": {
+            "types": "./dist/css.d.ts",
+            "import": "./dist/css.js",
+            "require": "./dist/css.cjs"
+        },
+        "./package.json": "./package.json"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "typecheck": "tsc --noEmit",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "tsup": "^8.3.5",
+        "typescript": "^5.8.3"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}

@@ -1,0 +1,7 @@
+src
+tsup.config.ts
+tsconfig.json
+.github
+*.map
+*.log
+.DS_Store
