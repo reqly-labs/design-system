@@ -19,6 +19,7 @@ export function themeCssVariables(theme: Theme): Record<string, string> {
         '--color-primary': colors.primary,
         '--color-primary-hover': colors.primaryHover,
         '--color-primary-fg': colors.primaryFg,
+        '--color-danger-fg': colors.dangerFg,
         '--color-success': colors.success,
         '--color-warning': colors.warning,
         '--color-danger': colors.danger,

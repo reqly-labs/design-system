@@ -15,6 +15,7 @@ export const dark: Theme = {
         primary: 'oklch(0.76 0.2 154)',
         primaryHover: 'oklch(0.81 0.2 154)',
         primaryFg: 'oklch(0.14 0.02 155)',
+        dangerFg: 'oklch(0.98 0 0)',
         success: 'oklch(0.75 0.18 152)',
         warning: 'oklch(0.76 0.16 75)',
         danger: 'oklch(0.68 0.22 25)',

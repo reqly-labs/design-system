@@ -19,6 +19,7 @@ export interface ThemeColors {
     primary: string;
     primaryHover: string;
     primaryFg: string;
+    dangerFg?: string;
     success: string;
     warning: string;
     danger: string;
