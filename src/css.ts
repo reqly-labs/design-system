@@ -69,16 +69,15 @@ export interface CssOptions {
     darkSelector?: string;
 }
 
-export function createThemeCss(
-    light: Theme,
-    dark: Theme,
-    options: CssOptions = {}
-): string {
+export function createThemeCss(light: Theme, dark: Theme, options: CssOptions = {}): string {
     const lightSelector = options.lightSelector ?? ':root';
     const darkSelector = options.darkSelector ?? '.dark';
 
     return [
-        toBlock(lightSelector, { ...tokenCssVariables(), ...themeCssVariables(light) }),
+        toBlock(lightSelector, {
+            ...tokenCssVariables(),
+            ...themeCssVariables(light),
+        }),
         themeToCss(dark, darkSelector),
     ].join('\n\n');
 }
