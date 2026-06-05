@@ -79,12 +79,12 @@ The generated CSS follows this shape:
 
 ## What Is Included
 
-| Area | Exports | Purpose |
-| --- | --- | --- |
-| Tokens | `tokens`, `radius`, `spacing`, `typography`, `breakpoints`, `transitions` | Shared visual primitives |
-| Themes | `light`, `dark`, `themes`, `defaultTheme`, `defaultThemeName`, `getTheme` | Reqly light/dark theme model |
-| Assets | `brand` | Brand metadata and public asset URLs |
-| CSS helpers | `createThemeCss`, `themeToCss`, `themeCssVariables`, `tokenCssVariables` | CSS variable generation |
+| Area        | Exports                                                                   | Purpose                              |
+| ----------- | ------------------------------------------------------------------------- | ------------------------------------ |
+| Tokens      | `tokens`, `radius`, `spacing`, `typography`, `breakpoints`, `transitions` | Shared visual primitives             |
+| Themes      | `light`, `dark`, `themes`, `defaultTheme`, `defaultThemeName`, `getTheme` | Reqly light/dark theme model         |
+| Assets      | `brand`                                                                   | Brand metadata and public asset URLs |
+| CSS helpers | `createThemeCss`, `themeToCss`, `themeCssVariables`, `tokenCssVariables`  | CSS variable generation              |
 
 ## Package Exports
 
@@ -241,13 +241,13 @@ npm run build
 
 Available scripts:
 
-| Command | Description |
-| --- | --- |
-| `npm run build` | Bundles ESM, CommonJS and type declarations into `dist/` |
-| `npm run dev` | Runs `tsup` in watch mode for package development |
-| `npm run typecheck` | Runs TypeScript validation without emitting files |
-| `npm run format` | Formats the package with Prettier |
-| `npm run prepublishOnly` | Builds the package before publishing |
+| Command                  | Description                                              |
+| ------------------------ | -------------------------------------------------------- |
+| `npm run build`          | Bundles ESM, CommonJS and type declarations into `dist/` |
+| `npm run dev`            | Runs `tsup` in watch mode for package development        |
+| `npm run typecheck`      | Runs TypeScript validation without emitting files        |
+| `npm run format`         | Formats the package with Prettier                        |
+| `npm run prepublishOnly` | Builds the package before publishing                     |
 
 ## Release Checklist
 
