@@ -1,6 +1,6 @@
 {
     "name": "@reqly/design-system",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "Design tokens, themes and brand assets for the Reqly ecosystem.",
     "license": "MIT",
     "author": "Reqly Labs",
